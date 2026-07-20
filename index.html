@@ -6,12 +6,12 @@
     <title>ZapControl CRM | Atendimento no WhatsApp mais rápido</title>
     <meta
       name="description"
-      content="ZapControl CRM organiza atendimentos no WhatsApp, direciona clientes ao setor certo, automatiza respostas, controla vendas e gera relatórios."
+      content="ZapControl CRM organiza atendimentos no WhatsApp, direciona clientes ao setor certo, automatiza respostas, controla vendas e gera relatórios para sua equipe."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -33,13 +33,13 @@
     </header>
 
     <main>
-      <section class="hero" id="inicio">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="hero-bg" aria-hidden="true">
           <img src="assets/zapcontrol-sistema.png" alt="" />
         </div>
         <div class="hero-content">
           <p class="eyebrow">CRM para atendimento, vendas e relacionamento</p>
-          <h1>ZapControl CRM</h1>
+          <h1 id="hero-title">ZapControl CRM</h1>
           <p class="hero-copy">
             Seu atendimento no WhatsApp mais rápido, organizado e automático,
             com clientes direcionados ao setor certo e respostas sem demora.
@@ -50,22 +50,22 @@
             </a>
             <a class="secondary-button" href="#recursos">Ver recursos</a>
           </div>
-          <div class="hero-metrics">
-            <span><strong>24h</strong> respostas automáticas</span>
+          <div class="hero-metrics" aria-label="Destaques do sistema">
+            <span><strong>24h</strong> de respostas automáticas</span>
             <span><strong>1 tela</strong> para toda a equipe</span>
-            <span><strong>CRM</strong> funil e relatórios</span>
+            <span><strong>CRM</strong> com funil e relatorios</span>
           </div>
         </div>
       </section>
 
-      <section class="intro-strip">
+      <section class="section intro-strip" aria-label="Principais resultados">
         <div>
           <strong>Atendimento organizado</strong>
           <span>Conversas, filas, contatos e tarefas em uma central única.</span>
         </div>
         <div>
           <strong>Vendas sob controle</strong>
-          <span>Acompanhe oportunidades, retornos e negociações por etapa.</span>
+          <span>Acompanhe oportunidades, retornos e negociacoes por etapa.</span>
         </div>
         <div>
           <strong>Menos retrabalho</strong>
@@ -85,29 +85,29 @@
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <span>01</span>
+            <span class="feature-icon" aria-hidden="true">01</span>
             <h3>Central de atendimentos</h3>
             <p>Organize conversas abertas, aguardando retorno, fechadas e internas.</p>
           </article>
           <article class="feature-card">
-            <span>02</span>
+            <span class="feature-icon" aria-hidden="true">02</span>
             <h3>Filas e chatbot</h3>
             <p>Direcione o cliente para vendas, suporte, financeiro ou outros setores.</p>
           </article>
           <article class="feature-card">
-            <span>03</span>
+            <span class="feature-icon" aria-hidden="true">03</span>
             <h3>Respostas rápidas</h3>
             <p>Padronize mensagens frequentes e reduza o tempo de resposta.</p>
           </article>
           <article class="feature-card">
-            <span>04</span>
+            <span class="feature-icon" aria-hidden="true">04</span>
             <h3>Relatórios e controle</h3>
             <p>Acompanhe produtividade, vendas, tarefas, contatos e resultados.</p>
           </article>
         </div>
       </section>
 
-      <section class="product-view">
+      <section class="product-view" aria-label="Visual do sistema">
         <div class="product-copy">
           <p class="eyebrow">Visual do sistema</p>
           <h2>Uma central feita para equipes que atendem todos os dias.</h2>
@@ -117,7 +117,7 @@
           </p>
         </div>
         <figure class="screen-frame">
-          <img src="assets/zapcontrol-sistema.png" alt="Tela do ZapControl CRM" />
+          <img src="assets/zapcontrol-sistema.png" alt="Tela do ZapControl CRM com conversas, menu de atendimento e painel central" />
         </figure>
       </section>
 
@@ -173,7 +173,7 @@
           <h2>Quando o WhatsApp vira processo, sua equipe vende mais e atende melhor.</h2>
         </div>
         <ul>
-          <li>Controle de atendimentos por usuário e fila.</li>
+          <li>Controle de atendimentos por usuario e fila.</li>
           <li>Campanhas e cobranças com mais organização.</li>
           <li>Tags, contatos e agendamentos para acompanhar cada cliente.</li>
           <li>Integrações e automações para reduzir tarefas repetitivas.</li>
@@ -188,20 +188,24 @@
         <div class="faq-list">
           <details>
             <summary>O ZapControl substitui o WhatsApp da empresa?</summary>
-            <p>Ele centraliza e organiza os atendimentos para a equipe trabalhar com mais controle.</p>
+            <p>Ele centraliza e organiza os atendimentos para a equipe trabalhar com mais controle, sem depender de conversas espalhadas.</p>
           </details>
           <details>
             <summary>Dá para separar atendimentos por setor?</summary>
-            <p>Sim. O sistema pode direcionar clientes para vendas, suporte, financeiro e outras filas.</p>
+            <p>Sim. O sistema pode direcionar clientes para vendas, suporte, financeiro, recepcao ou qualquer fila criada para sua operacao.</p>
           </details>
           <details>
             <summary>Consigo acompanhar vendas e relatórios?</summary>
-            <p>Sim. O CRM ajuda a acompanhar oportunidades, tarefas, contatos, produtividade e resultados.</p>
+            <p>Sim. O CRM ajuda a acompanhar oportunidades, tarefas, contatos, produtividade e resultados do atendimento.</p>
+          </details>
+          <details>
+            <summary>Como faço para testar?</summary>
+            <p>Clique no botão de WhatsApp e solicite uma demonstração para entender o melhor formato para sua empresa.</p>
           </details>
         </div>
       </section>
 
-      <section class="final-cta">
+      <section class="final-cta" aria-label="Solicitar demonstração">
         <img src="assets/zapcontrol-logo-clean.png" alt="ZapControl" />
         <h2>Pronto para organizar o atendimento da sua empresa?</h2>
         <p>Fale agora pelo WhatsApp e veja como o ZapControl CRM pode acelerar sua equipe.</p>

@@ -1,10 +1,14 @@
 :root {
   --ink: #101828;
   --muted: #52627a;
+  --soft: #edf4fb;
   --line: #d9e4ef;
   --green: #22e423;
   --green-dark: #16a927;
   --navy: #081525;
+  --blue: #1976f3;
+  --cyan: #dff7ff;
+  --orange: #ff7a2f;
   --white: #ffffff;
   --shadow: 0 24px 70px rgba(8, 21, 37, 0.14);
 }
@@ -46,13 +50,14 @@ a {
   gap: 28px;
   padding: 16px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(8, 21, 37, 0.9);
+  background: rgba(8, 21, 37, 0.88);
   color: var(--white);
   backdrop-filter: blur(18px);
 }
 
 .brand img {
   width: 178px;
+  height: auto;
 }
 
 .main-nav {
@@ -61,7 +66,11 @@ a {
   gap: 26px;
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.94rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.main-nav a:hover {
+  color: var(--white);
 }
 
 .header-cta,
@@ -72,9 +81,9 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.1;
-  transition: transform 180ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
 .header-cta,
@@ -136,6 +145,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   opacity: 0.72;
 }
 
@@ -212,6 +222,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
   background: var(--line);
 }
 
@@ -228,11 +240,9 @@ a {
   font-size: 1.12rem;
 }
 
-.intro-strip span,
-.section-copy p:not(.eyebrow),
-.product-copy p:not(.eyebrow) {
+.intro-strip span {
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.55;
 }
 
 .split-section {
@@ -261,6 +271,14 @@ h3 {
   line-height: 1.25;
 }
 
+.section-copy p:not(.eyebrow),
+.product-copy p:not(.eyebrow),
+.centered-heading + p {
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -275,9 +293,8 @@ h3 {
   background: linear-gradient(180deg, #ffffff, #f5fbff);
 }
 
-.feature-card span,
-.steps span {
-  display: grid;
+.feature-icon {
+  display: inline-grid;
   width: 46px;
   height: 46px;
   margin-bottom: 34px;
@@ -288,10 +305,8 @@ h3 {
   font-weight: 900;
 }
 
-.feature-card p,
-.steps p,
-.final-cta p,
-details p {
+.feature-card p {
+  margin: 12px 0 0;
   color: var(--muted);
   line-height: 1.62;
 }
@@ -313,14 +328,17 @@ details p {
   overflow: hidden;
 }
 
+.screen-frame img {
+  width: 100%;
+}
+
 .centered-heading {
   width: min(900px, 100%);
   margin: 0 auto 40px;
   text-align: center;
 }
 
-#setores,
-.faq {
+.section#setores {
   background: var(--white);
 }
 
@@ -338,6 +356,7 @@ details p {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #f7fbff;
+  color: var(--ink);
   font-weight: 800;
   text-align: center;
 }
@@ -361,9 +380,20 @@ details p {
 }
 
 .steps span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 34px;
+  place-items: center;
   border-radius: 50%;
   background: var(--green);
   color: #041106;
+  font-weight: 900;
+}
+
+.steps p {
+  color: var(--muted);
+  line-height: 1.62;
 }
 
 .proof-band {
@@ -384,11 +414,20 @@ details p {
 }
 
 .proof-band li {
-  padding: 18px;
+  padding: 18px 18px 18px 48px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.06);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.proof-band li::before {
+  content: "";
+  position: absolute;
+}
+
+.faq {
+  background: var(--white);
 }
 
 .faq-list {
@@ -413,6 +452,8 @@ summary {
 details p {
   margin: 0;
   padding: 0 24px 22px;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .final-cta {
@@ -425,15 +466,17 @@ details p {
 .final-cta img {
   width: min(340px, 84vw);
   margin-bottom: 28px;
+  background: var(--navy);
   padding: 14px 18px;
   border-radius: 8px;
-  background: var(--navy);
 }
 
 .final-cta p {
   width: min(640px, 100%);
   margin: 18px 0 28px;
+  color: var(--muted);
   font-size: 1.08rem;
+  line-height: 1.65;
 }
 
 .site-footer {
@@ -458,6 +501,10 @@ details p {
 
   .main-nav {
     display: none;
+  }
+
+  .hero {
+    min-height: 88vh;
   }
 
   .hero-metrics,
