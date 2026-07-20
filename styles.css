@@ -1150,6 +1150,10 @@ h3 {
   background: var(--light);
 }
 
+.faq-section .eyebrow::before {
+  animation: onlineBlink 1.2s ease-in-out infinite;
+}
+
 .faq-grid {
   align-items: start;
 }
