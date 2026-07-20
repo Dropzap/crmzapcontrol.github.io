@@ -424,6 +424,16 @@ h3 {
   margin-top: 12px;
 }
 
+.plans-image-frame {
+  align-self: stretch;
+}
+
+.plans-image-frame img {
+  height: 100%;
+  object-fit: contain;
+  background: var(--white);
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
