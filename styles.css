@@ -1278,6 +1278,7 @@ details p {
 
 .contact-copy h2 {
   max-width: 560px;
+  margin-top: 12px;
   font-size: clamp(2.15rem, 4vw, 3.15rem);
 }
 
