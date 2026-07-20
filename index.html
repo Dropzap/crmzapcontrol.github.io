@@ -431,24 +431,47 @@
 
       <section class="section-pad contact-section" id="contato">
         <div class="container contact-grid">
-          <div class="reveal">
-            <span class="eyebrow">Contato</span>
+          <div class="contact-copy reveal">
             <h2>Vamos melhorar o atendimento da sua empresa?</h2>
             <p>Fale com nossa equipe e descubra como o Zap Control pode ajudar sua empresa a atender com mais rapidez, organização e eficiência.</p>
             <div class="contact-info">
-              <a href="mailto:zapboot@hotmail.com">zapboot@hotmail.com</a>
-              <a href="https://wa.me/5527989001165">+55 27 98900-1165</a>
-              <a href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Preciso%20de%20ajuda%20com%20o%20Zap%20Control.">Central de Ajuda</a>
+              <a class="contact-card" href="mailto:zapboot@hotmail.com">
+                <span class="contact-card-icon blue">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 3.25 7.45 4.66a1 1 0 0 0 1.1 0L20 8.25V7l-8 5-8-5v1.25Z" /></svg>
+                </span>
+                <span><small>E-mail</small><strong>zapboot@hotmail.com</strong></span>
+              </a>
+              <a class="contact-card" href="https://wa.me/5527989001165">
+                <span class="contact-card-icon green">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.1 3.3a1.7 1.7 0 0 1 2.4.1l1.7 2a1.7 1.7 0 0 1 .1 2l-.9 1.4a.7.7 0 0 0 .1.8 14.5 14.5 0 0 0 4 4 .7.7 0 0 0 .8.1l1.4-.9a1.7 1.7 0 0 1 2 .1l2 1.7a1.7 1.7 0 0 1 .1 2.4l-1 1.2a3.4 3.4 0 0 1-3.4 1.1C10 17.8 6.2 14 4.7 7.6a3.4 3.4 0 0 1 1.1-3.4l1.3-.9Z" /></svg>
+                </span>
+                <span><small>WhatsApp</small><strong>+55 27 98900-1165</strong></span>
+              </a>
             </div>
+            <a class="contact-whatsapp" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20equipe%20do%20Zap%20Control.">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8.7 8.7 0 0 0-7.4 13.2L3.7 21l5-1.2A8.7 8.7 0 1 0 12 3Zm0 15.7c-1.1 0-2.2-.3-3.1-.7l-.4-.2-2.1.5.4-2-.2-.4A6.7 6.7 0 1 1 12 18.7Zm3.8-4.9c-.2-.1-1.2-.6-1.4-.7-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1a5.4 5.4 0 0 1-2.6-2.3c-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.1-.4l-.7-1.6c-.1-.4-.3-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4a8.6 8.6 0 0 0 3.6 3.2c1.3.6 1.8.6 2.4.5.7-.1 1.2-.6 1.4-1 .2-.5.2-.9.1-1 0-.1-.2-.2-.4-.3Z" /></svg>
+              Falar no WhatsApp
+            </a>
           </div>
           <form class="contact-form reveal" id="contactForm" novalidate>
-            <label>Nome<input name="nome" type="text" required autocomplete="name" /></label>
-            <label>Empresa<input name="empresa" type="text" required autocomplete="organization" /></label>
-            <label>E-mail<input name="email" type="email" required autocomplete="email" /></label>
-            <label>Telefone<input name="telefone" type="tel" required autocomplete="tel" /></label>
-            <label>Quantidade de atendentes<input name="atendentes" type="number" min="1" required /></label>
-            <label>Mensagem<textarea name="mensagem" rows="4" required></textarea></label>
-            <button class="btn btn-primary" type="submit">Solicitar demonstração</button>
+            <label>Nome *<input name="nome" type="text" placeholder="Seu nome" required autocomplete="name" /></label>
+            <label>Empresa *<input name="empresa" type="text" placeholder="Nome da empresa" required autocomplete="organization" /></label>
+            <label>E-mail *<input name="email" type="email" placeholder="voce@empresa.com" required autocomplete="email" /></label>
+            <label>Telefone *<input name="telefone" type="tel" placeholder="(00) 00000-0000" required autocomplete="tel" /></label>
+            <label class="wide-field">Quantidade de atendentes *
+              <select name="atendentes" required>
+                <option value="">Selecione...</option>
+                <option value="1 a 3">1 a 3 atendentes</option>
+                <option value="4 a 8">4 a 8 atendentes</option>
+                <option value="9 a 15">9 a 15 atendentes</option>
+                <option value="Mais de 15">Mais de 15 atendentes</option>
+              </select>
+            </label>
+            <label class="wide-field">Mensagem *<textarea name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea></label>
+            <button class="btn btn-primary wide-field contact-submit" type="submit">
+              Enviar mensagem
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4 21 3l-5.3 18-4-7.1-8.3 6.5Zm8.6-8.3 2.7 4.8 2.8-9.5-5.5 4.7Z" /></svg>
+            </button>
             <p class="form-message" role="status"></p>
           </form>
         </div>
