@@ -362,14 +362,40 @@ h3 {
   width: 100%;
 }
 
-.screen-gallery {
+.screen-slider {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  grid-auto-columns: minmax(78%, 1fr);
+  grid-auto-flow: column;
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 4px 4px 18px;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: var(--green) rgba(8, 21, 37, 0.12);
 }
 
-.screen-frame-large {
-  grid-column: 1 / -1;
+.slide-card {
+  margin: 0;
+  border: 1px solid rgba(16, 24, 40, 0.14);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.slide-card img {
+  width: 100%;
+  aspect-ratio: 16 / 8.2;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.slide-card figcaption {
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 900;
 }
 
 .centered-heading {
@@ -759,11 +785,15 @@ details p {
   }
 
   .feature-grid,
-  .screen-gallery,
+  .screen-slider,
   .steps,
   .pricing-grid,
   .sector-grid {
     grid-template-columns: 1fr;
+  }
+
+  .screen-slider {
+    grid-auto-columns: 92%;
   }
 
   .feature-card,
