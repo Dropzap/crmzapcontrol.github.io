@@ -1,287 +1,457 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ZapControl CRM | Atendimento no WhatsApp mais rápido</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zap Control | Automação de WhatsApp, Chatbot e CRM de Atendimento</title>
     <meta
       name="description"
-      content="ZapControl CRM organiza atendimentos no WhatsApp, direciona clientes ao setor certo, automatiza respostas, controla vendas e gera relatórios para sua equipe."
+      content="Centralize seus atendimentos, automatize respostas, organize sua equipe e aumente suas vendas com o Zap Control, uma plataforma completa de CRM e automação para WhatsApp."
     />
+    <meta
+      name="keywords"
+      content="automação de WhatsApp, CRM para WhatsApp, chatbot para WhatsApp, atendimento com vários usuários, sistema de atendimento WhatsApp, gestão de vendas, funil de vendas, atendimento ao cliente, automação comercial, gestão de contatos, campanhas no WhatsApp, plataforma de atendimento"
+    />
+    <meta name="theme-color" content="#0F172A" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zap Control | CRM e automação para WhatsApp" />
+    <meta property="og:description" content="Organize atendimentos, automatize processos e acompanhe oportunidades em uma plataforma completa para WhatsApp." />
+    <meta property="og:image" content="assets/logo-zapcontrol-dark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zap Control",
+        "email": "zapboot@hotmail.com",
+        "url": "https://dropzap.github.io/zapcontrol.github.io/",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+55 27 98900-1165",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "pt-BR"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Zap Control",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Plataforma de CRM, chatbot e automação de atendimento pelo WhatsApp.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL",
+          "description": "Consulte condições comerciais com a equipe Zap Control."
+        }
+      }
+    </script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="ZapControl CRM">
-        <img src="assets/zapcontrol-logo-clean.png" alt="ZapControl" />
-      </a>
-      <nav class="main-nav" aria-label="Menu principal">
-        <a href="#recursos">Recursos</a>
-        <a href="#setores">Setores</a>
-        <a href="#planos">Planos</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#faq">FAQ</a>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <header class="site-header" id="siteHeader">
+      <nav class="nav-shell" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Zap Control início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 2 7 17h7l-2 13 13-18h-8l3-10Z" /></svg>
+          </span>
+          <span>Zap Control</span>
+        </a>
+
+        <button class="mobile-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#inicio">Início</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#planos">Planos</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="https://painel.chatbootsolucoes.shop">Entrar</a>
+          <a class="btn btn-primary" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Gostaria%20de%20testar%20o%20Zap%20Control.">Testar grátis</a>
+        </div>
       </nav>
-      <div class="header-actions">
-        <a class="header-link" href="https://painel.chatbootsolucoes.shop" target="_blank" rel="noopener">
-          Entrar
-        </a>
-        <a class="header-cta" href="https://wa.me/5527989001165?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20ZapControl%20CRM" target="_blank" rel="noopener">
-          Falar no WhatsApp
-        </a>
-      </div>
     </header>
 
-    <main>
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="hero-bg" aria-hidden="true">
-          <img src="assets/zapcontrol-dashboard.png" alt="" />
-        </div>
-        <div class="hero-content">
-          <p class="eyebrow">CRM para atendimento, vendas e relacionamento</p>
-          <h1 id="hero-title">ZapControl CRM</h1>
-          <p class="hero-copy">
-            Seu atendimento no WhatsApp mais rápido, organizado e automático,
-            com clientes direcionados ao setor certo e respostas sem demora.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="https://wa.me/5527989001165?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20ZapControl%20CRM" target="_blank" rel="noopener">
-              Solicitar demonstração
-            </a>
-            <a class="secondary-button" href="https://painel.chatbootsolucoes.shop" target="_blank" rel="noopener">Entrar no painel</a>
-          </div>
-          <div class="hero-metrics" aria-label="Destaques do sistema">
-            <span><strong>24h</strong> de respostas automáticas</span>
-            <span><strong>1 tela</strong> para toda a equipe</span>
-            <span><strong>CRM</strong> com funil e relatorios</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section intro-strip" aria-label="Principais resultados">
-        <div>
-          <strong>Atendimento organizado</strong>
-          <span>Conversas, filas, contatos e tarefas em uma central única.</span>
-        </div>
-        <div>
-          <strong>Vendas sob controle</strong>
-          <span>Acompanhe oportunidades, retornos e negociacoes por etapa.</span>
-        </div>
-        <div>
-          <strong>Menos retrabalho</strong>
-          <span>Automatize respostas, etiquetas, cobranças e direcionamentos.</span>
-        </div>
-      </section>
-
-      <section class="section split-section" id="recursos">
-        <div class="section-copy">
-          <p class="eyebrow">O que o ZapControl resolve</p>
-          <h2>Transforme mensagens soltas em um atendimento profissional.</h2>
-          <p>
-            O ZapControl CRM ajuda sua empresa a responder mais rápido, distribuir
-            atendimentos para o setor correto e manter o histórico de cada cliente
-            acessível para a equipe.
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">01</span>
-            <h3>Central de atendimentos</h3>
-            <p>Organize conversas abertas, aguardando retorno, fechadas e internas.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">02</span>
-            <h3>Filas e chatbot</h3>
-            <p>Direcione o cliente para vendas, suporte, financeiro ou outros setores.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">03</span>
-            <h3>Respostas rápidas</h3>
-            <p>Padronize mensagens frequentes e reduza o tempo de resposta.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">04</span>
-            <h3>Relatórios e controle</h3>
-            <p>Acompanhe produtividade, vendas, tarefas, contatos e resultados.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="product-view" aria-label="Visual do sistema">
-        <div class="product-copy">
-          <p class="eyebrow">Visual do sistema</p>
-          <h2>Atendimento, relatórios e planos em uma experiência simples.</h2>
-          <p>
-            O painel concentra conversas, histórico, tickets, contatos, tarefas,
-            campanhas, integrações e administração sem perder velocidade.
-          </p>
-        </div>
-        <div class="screen-slider is-playing" aria-label="Vídeo em slides do sistema ZapControl CRM" data-slider>
-          <div class="slide-stage">
-            <button class="slider-control slider-control-prev" type="button" aria-label="Slide anterior" data-slide-prev>‹</button>
-            <div class="slide-track" data-slide-track>
-          <figure class="slide-card is-active">
-            <img src="assets/slide-visao-geral.png" alt="Slide com visão geral do atendimento, relatórios e planos no ZapControl CRM" />
-            <figcaption>Visão geral do sistema</figcaption>
-          </figure>
-          <figure class="slide-card">
-            <img src="assets/slide-dashboard-crm.png" alt="Dashboard CRM com indicadores de atendimento, contatos e tempo médio" />
-            <figcaption>Dashboard executivo</figcaption>
-          </figure>
-          <figure class="slide-card">
-            <img src="assets/slide-relatorios.png" alt="Relatórios operacionais com gráficos por usuário, data e departamentos" />
-            <figcaption>Relatórios e performance</figcaption>
-          </figure>
-          <figure class="slide-card">
-            <img src="assets/slide-conexoes.png" alt="Tela de conexões WhatsApp do ZapControl CRM" />
-            <figcaption>Conexões WhatsApp</figcaption>
-          </figure>
-          <figure class="slide-card">
-            <img src="assets/slide-filas-chatbot.png" alt="Tela de filas e chatbot com setores de atendimento" />
-            <figcaption>Filas e chatbot</figcaption>
-          </figure>
+    <main id="inicio">
+      <section class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">CRM e automação para WhatsApp</span>
+            <h1>Automatize seu WhatsApp e transforme cada conversa em uma oportunidade de venda</h1>
+            <p>Centralize seus atendimentos, organize sua equipe, automatize respostas e acompanhe seus clientes em uma única plataforma.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-large" href="#planos">Começar agora</a>
+              <a class="btn btn-outline btn-large" href="#solucoes">Conhecer soluções</a>
             </div>
-            <button class="slider-control slider-control-next" type="button" aria-label="Próximo slide" data-slide-next>›</button>
+            <p class="microcopy">Atendimento organizado, implantação simplificada e suporte especializado.</p>
           </div>
 
-          <div class="slide-dots" aria-label="Navegação dos slides">
-            <button class="is-active" type="button" data-slide-dot="0">Visão geral</button>
-            <button type="button" data-slide-dot="1">Dashboard</button>
-            <button type="button" data-slide-dot="2">Relatórios</button>
-            <button type="button" data-slide-dot="3">Conexões</button>
-            <button type="button" data-slide-dot="4">Filas</button>
+          <div class="hero-visual reveal" aria-label="Demonstração visual do painel Zap Control">
+            <div class="floating-card card-one">Atendimento 24 horas</div>
+            <div class="floating-card card-two">Respostas automáticas</div>
+            <div class="floating-card card-three">Vários atendentes</div>
+            <div class="floating-card card-four">Mais produtividade</div>
+
+            <div class="product-window">
+              <div class="window-top">
+                <span></span><span></span><span></span>
+                <strong>Zap Control CRM</strong>
+              </div>
+              <div class="mockup">
+                <aside class="mock-sidebar">
+                  <div class="mini-logo"></div>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </aside>
+                <section class="mock-content">
+                  <div class="mock-toolbar">
+                    <span>Conversas</span>
+                    <span>Filas</span>
+                    <span>Funil</span>
+                  </div>
+                  <div class="mock-columns">
+                    <div class="chat-list">
+                      <article><b>Mariana</b><small>Quero conhecer os planos</small></article>
+                      <article><b>Clínica Vida</b><small>Agendar demonstração</small></article>
+                      <article><b>Suporte técnico</b><small>Ticket direcionado</small></article>
+                    </div>
+                    <div class="dashboard-preview">
+                      <div class="kpi-row">
+                        <span><b>106</b><small>conversas</small></span>
+                        <span><b>07h</b><small>média</small></span>
+                        <span><b>31</b><small>vendas</small></span>
+                      </div>
+                      <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="pipeline">
+                        <span>Lead</span><span>Atendimento</span><span>Venda</span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="slide-player">
-            <button class="play-toggle" type="button" data-slide-play aria-label="Pausar apresentação">
-              <span class="pause-icon" aria-hidden="true">❚❚</span>
-              <span data-slide-play-label>Pausar</span>
-            </button>
-            <span>Apresentação automática das telas</span>
+      <section class="trust-strip">
+        <div class="container trust-grid reveal">
+          <p>Uma plataforma completa para empresas que desejam atender com mais rapidez, controle e eficiência.</p>
+          <div><strong>5 anos</strong><span>de experiência</span></div>
+          <div><strong>Centralizado</strong><span>atendimento em equipe</span></div>
+          <div><strong>Contatos</strong><span>gestão completa</span></div>
+          <div><strong>Automação</strong><span>processos organizados</span></div>
+        </div>
+      </section>
+
+      <section class="section-pad light-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Segmentos</span>
+            <h2>Feito para empresas que querem atender melhor</h2>
+            <p>O Zap Control se adapta a diferentes segmentos e ajuda sua empresa a organizar o atendimento, acompanhar clientes e gerar novas oportunidades.</p>
+          </div>
+          <div class="segment-grid">
+            <article class="feature-card reveal"><span class="icon">LO</span><h3>Lojas e comércios</h3><p>Organize pedidos, dúvidas, orçamentos e pós-venda em um só painel.</p></article>
+            <article class="feature-card reveal"><span class="icon">CL</span><h3>Clínicas e consultórios</h3><p>Direcione pacientes, confirme horários e mantenha históricos acessíveis.</p></article>
+            <article class="feature-card reveal"><span class="icon">SV</span><h3>Prestadores de serviços</h3><p>Controle solicitações, retornos e atendimentos recorrentes sem perder contexto.</p></article>
+            <article class="feature-card reveal"><span class="icon">IM</span><h3>Imobiliárias</h3><p>Acompanhe leads, visitas, negociações e documentação em etapas claras.</p></article>
+            <article class="feature-card reveal"><span class="icon">ED</span><h3>Escolas e cursos</h3><p>Centralize matrículas, suporte aos alunos e campanhas de relacionamento.</p></article>
+            <article class="feature-card reveal"><span class="icon">VD</span><h3>Equipes de vendas</h3><p>Transforme conversas em oportunidades com funil e acompanhamento.</p></article>
+            <article class="feature-card reveal"><span class="icon">ST</span><h3>Suporte técnico</h3><p>Separe filas, tickets e responsáveis para resolver solicitações com agilidade.</p></article>
+            <article class="feature-card reveal"><span class="icon">CB</span><h3>Empresas de cobrança</h3><p>Automatize lembretes, negociações e acompanhamentos com mais controle.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="setores">
-        <div class="centered-heading">
-          <p class="eyebrow">Para vários tipos de negócio</p>
-          <h2>Atendimento melhor para quem depende do WhatsApp para vender e resolver.</h2>
-        </div>
-        <div class="sector-grid">
-          <span>Lojas</span>
-          <span>Clínicas</span>
-          <span>Contabilidades</span>
-          <span>Oficinas</span>
-          <span>Imobiliárias</span>
-          <span>Suporte técnico</span>
-          <span>Escolas</span>
-          <span>Prestadores de serviço</span>
-        </div>
-      </section>
-
-      <section class="plans-preview" id="planos" aria-label="Planos do ZapControl">
-        <div class="plans-copy">
-          <p class="eyebrow">Planos para começar</p>
-          <h2>Escolha a estrutura certa para sua equipe.</h2>
-          <p>
-            Comece com uma conexão WhatsApp e aumente usuários, conexões e suporte conforme sua operação cresce.
-          </p>
-          <a class="primary-button" href="https://wa.me/5527989001165?text=Ol%C3%A1%2C%20quero%20conhecer%20os%20planos%20do%20ZapControl%20CRM" target="_blank" rel="noopener">
-            Ver melhor plano
-          </a>
-        </div>
-        <figure class="screen-frame plans-image-frame">
-          <img src="assets/zapcontrol-planos.png" alt="Planos Master, Pro e Start do ZapControl CRM" />
-        </figure>
-      </section>
-
-      <section class="section workflow" id="como-funciona">
-        <div class="centered-heading">
-          <p class="eyebrow">Como funciona</p>
-          <h2>Do primeiro contato ao acompanhamento da venda.</h2>
-        </div>
-        <div class="steps">
-          <article>
-            <span>1</span>
-            <h3>Cliente chama no WhatsApp</h3>
-            <p>O atendimento entra na central e pode ser classificado automaticamente.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Sistema direciona ao setor certo</h3>
-            <p>Filas, etiquetas e operadores deixam cada conversa no lugar correto.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Equipe atende com contexto</h3>
-            <p>Histórico, contatos e respostas rápidas reduzem demora e retrabalho.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>Gestor acompanha resultados</h3>
-            <p>Relatórios mostram volume, produtividade, vendas e oportunidades.</p>
-          </article>
+      <section class="section-pad" id="solucoes">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Soluções</span>
+            <h2>Tudo o que sua empresa precisa para gerenciar o WhatsApp</h2>
+            <p>Centralize conversas, automatize tarefas e acompanhe todo o relacionamento com seus clientes em uma única plataforma.</p>
+          </div>
+          <div class="solutions-grid">
+            <article class="solution-card reveal"><span class="line-icon">EQ</span><h3>Atendimento com vários usuários</h3><p>Permita que vários atendentes utilizem o mesmo número de WhatsApp, com organização por setores, filas e responsáveis.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">BOT</span><h3>Chatbot automatizado</h3><p>Crie menus automáticos para direcionar clientes aos setores de vendas, suporte, financeiro ou recepção.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">FN</span><h3>Funil de vendas</h3><p>Organize oportunidades em etapas e acompanhe cada cliente desde o primeiro contato até a conclusão da venda.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">RX</span><h3>Respostas rápidas</h3><p>Cadastre mensagens prontas para agilizar o atendimento e manter um padrão de comunicação em toda a equipe.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">AG</span><h3>Agendamentos</h3><p>Programe mensagens, campanhas, lembretes, cobranças e retornos automáticos.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">CT</span><h3>Gestão de contatos</h3><p>Centralize dados, históricos, etiquetas, observações e informações importantes dos clientes.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">BI</span><h3>Relatórios e resultados</h3><p>Acompanhe tempo de atendimento, quantidade de conversas, desempenho da equipe e satisfação dos clientes.</p></article>
+            <article class="solution-card reveal"><span class="line-icon">API</span><h3>Integrações</h3><p>Conecte o Zap Control com sistemas, ferramentas e plataformas utilizadas pela sua empresa.</p></article>
+          </div>
         </div>
       </section>
 
-      <section class="section proof-band">
-        <div>
-          <p class="eyebrow">Mais controle para crescer</p>
-          <h2>Quando o WhatsApp vira processo, sua equipe vende mais e atende melhor.</h2>
+      <section class="section-pad visual-section">
+        <div class="container visual-grid">
+          <div class="section-heading align-left reveal">
+            <span class="eyebrow">Visual do sistema</span>
+            <h2>Veja o Zap Control em ação, como uma apresentação de produto</h2>
+            <p>Use o play para passar pelas principais telas e mostrar atendimento, relatórios, conexões e filas em uma sequência profissional.</p>
+            <div class="slider-controls">
+              <button class="round-btn" type="button" data-prev aria-label="Slide anterior">‹</button>
+              <button class="play-btn" type="button" data-play aria-label="Reproduzir apresentação">Reproduzir</button>
+              <button class="round-btn" type="button" data-next aria-label="Próximo slide">›</button>
+            </div>
+          </div>
+          <div class="screen-slider reveal" data-slider>
+            <figure class="slide active">
+              <img src="assets/slide-visao-geral.png" alt="Tela de atendimento do Zap Control com conversas e painel central" loading="lazy" />
+              <figcaption>Atendimento centralizado</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/slide-dashboard-crm.png" alt="Dashboard CRM do Zap Control com indicadores de atendimento" loading="lazy" />
+              <figcaption>Dashboard executivo</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/slide-relatorios.png" alt="Relatórios do Zap Control com gráficos de desempenho" loading="lazy" />
+              <figcaption>Relatórios e desempenho</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/slide-conexoes.png" alt="Tela de conexões WhatsApp do Zap Control" loading="lazy" />
+              <figcaption>Conexões do WhatsApp</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/slide-filas-chatbot.png" alt="Tela de filas e chatbot do Zap Control" loading="lazy" />
+              <figcaption>Filas e chatbot</figcaption>
+            </figure>
+            <div class="slider-dots" aria-label="Navegação dos slides"></div>
+          </div>
         </div>
-        <ul>
-          <li>Controle de atendimentos por usuario e fila.</li>
-          <li>Campanhas e cobranças com mais organização.</li>
-          <li>Tags, contatos e agendamentos para acompanhar cada cliente.</li>
-          <li>Integrações e automações para reduzir tarefas repetitivas.</li>
-        </ul>
       </section>
 
-      <section class="section faq" id="faq">
-        <div class="centered-heading">
-          <p class="eyebrow">Perguntas frequentes</p>
-          <h2>Dúvidas comuns antes da demonstração.</h2>
-        </div>
-        <div class="faq-list">
-          <details>
-            <summary>O ZapControl substitui o WhatsApp da empresa?</summary>
-            <p>Ele centraliza e organiza os atendimentos para a equipe trabalhar com mais controle, sem depender de conversas espalhadas.</p>
-          </details>
-          <details>
-            <summary>Dá para separar atendimentos por setor?</summary>
-            <p>Sim. O sistema pode direcionar clientes para vendas, suporte, financeiro, recepcao ou qualquer fila criada para sua operacao.</p>
-          </details>
-          <details>
-            <summary>Consigo acompanhar vendas e relatórios?</summary>
-            <p>Sim. O CRM ajuda a acompanhar oportunidades, tarefas, contatos, produtividade e resultados do atendimento.</p>
-          </details>
-          <details>
-            <summary>Como faço para testar?</summary>
-            <p>Clique no botão de WhatsApp e solicite uma demonstração para entender o melhor formato para sua empresa.</p>
-          </details>
+      <section class="section-pad light-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Comece a organizar seu atendimento em poucos passos</h2>
+            <p>Configure sua operação de maneira simples e concentre todas as conversas em um único ambiente.</p>
+          </div>
+          <div class="steps">
+            <article class="step-card reveal"><span>1</span><h3>Conecte seu WhatsApp</h3><p>Faça a conexão do número utilizado pela empresa e centralize as conversas na plataforma.</p></article>
+            <article class="step-card reveal"><span>2</span><h3>Configure sua equipe</h3><p>Cadastre atendentes, setores, filas, permissões, horários e mensagens automáticas.</p></article>
+            <article class="step-card reveal"><span>3</span><h3>Comece a atender</h3><p>Receba, distribua e organize todas as conversas em um único painel de atendimento.</p></article>
+          </div>
         </div>
       </section>
 
-      <section class="final-cta" aria-label="Solicitar demonstração">
-        <img src="assets/zapcontrol-logo-clean.png" alt="ZapControl" />
-        <h2>Pronto para organizar o atendimento da sua empresa?</h2>
-        <p>Fale agora pelo WhatsApp e veja como o ZapControl CRM pode acelerar sua equipe.</p>
-        <a class="primary-button" href="https://wa.me/5527989001165?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20ZapControl%20CRM" target="_blank" rel="noopener">
-          Falar no WhatsApp
-        </a>
+      <section class="section-pad about-section">
+        <div class="container two-column">
+          <div class="reveal">
+            <span class="eyebrow">Sobre nós</span>
+            <h2>Há 5 anos transformando a comunicação entre empresas e clientes</h2>
+            <p>A Zap Control é uma empresa especializada em soluções de CRM e automação para WhatsApp. Nossa missão é ajudar empresas a centralizar atendimentos, organizar equipes, automatizar processos e transformar cada conversa em uma oportunidade de venda.</p>
+            <p>Ao longo de cinco anos de experiência, desenvolvemos uma plataforma completa, prática e segura, com recursos para atendimento por múltiplos usuários, chatbot, funil de vendas, campanhas, gestão de contatos e acompanhamento de resultados.</p>
+            <p>Mais do que oferecer tecnologia, buscamos simplificar a rotina das empresas, aumentar a produtividade das equipes e proporcionar um atendimento mais rápido, organizado e eficiente aos clientes.</p>
+            <a class="btn btn-primary" href="#solucoes">Conheça nossas soluções</a>
+          </div>
+          <div class="highlight-panel reveal">
+            <img src="assets/logo-zapcontrol-dark.png" alt="Logo Zap Control" loading="lazy" />
+            <ul>
+              <li>5 anos de experiência</li>
+              <li>Plataforma completa</li>
+              <li>Atendimento especializado</li>
+              <li>Foco em produtividade</li>
+              <li>Tecnologia e segurança</li>
+              <li>Evolução constante</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad results-section" id="resultados">
+        <div class="container results-grid">
+          <div class="reveal">
+            <span class="eyebrow">Resultados</span>
+            <h2>Mais organização para sua equipe. Mais agilidade para seus clientes.</h2>
+            <p>Transforme processos manuais em uma operação organizada, automatizada e preparada para atender mais clientes.</p>
+            <div class="result-list">
+              <span>Até 70% menos tempo de espera</span>
+              <span>Atendimento disponível 24 horas</span>
+              <span>Mais controle sobre os contatos</span>
+              <span>Menos clientes sem resposta</span>
+              <span>Mais produtividade para a equipe</span>
+              <span>Mais oportunidades de vendas</span>
+            </div>
+            <small>Os resultados podem variar de acordo com a operação, configuração e utilização da plataforma.</small>
+          </div>
+          <div class="analytics-card reveal">
+            <div class="analytics-head"><b>Evolução operacional</b><span>CRM Analytics</span></div>
+            <div class="chart-line" aria-hidden="true">
+              <i style="height:42%"></i><i style="height:58%"></i><i style="height:66%"></i><i style="height:72%"></i><i style="height:88%"></i>
+            </div>
+            <div class="metric-grid">
+              <div><strong>+42%</strong><span>conversas atendidas</span></div>
+              <div><strong>-35%</strong><span>tempo de resposta</span></div>
+              <div><strong>+28%</strong><span>oportunidades</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad integration-section">
+        <div class="container two-column">
+          <div class="reveal">
+            <span class="eyebrow">Integrações</span>
+            <h2>Integre o Zap Control ao seu negócio</h2>
+            <p>Utilize nossa API e nossos webhooks para conectar o Zap Control aos sistemas que sua empresa já utiliza.</p>
+            <div class="integration-tags">
+              <span>WhatsApp</span><span>API</span><span>Webhooks</span><span>Sistemas CRM</span><span>Vendas</span><span>Atendimento</span><span>Integrações personalizadas</span>
+            </div>
+            <a class="btn btn-outline" href="#contato">Conhecer integrações</a>
+          </div>
+          <div class="flow-panel reveal" aria-label="Fluxo de integrações">
+            <span>Vendas</span><span>CRM</span><span class="center-node">Zap Control</span><span>API</span><span>Webhooks</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad plans-section" id="planos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Planos</span>
+            <h2>Escolha o plano ideal para sua empresa</h2>
+            <p>Encontre os recursos ideais para organizar sua operação e evolua de plano conforme sua equipe crescer.</p>
+          </div>
+          <div class="plans-grid">
+            <article class="plan-card reveal">
+              <h3>Plano Start</h3>
+              <p>Indicado para pequenas empresas que estão começando a organizar o atendimento.</p>
+              <strong class="price">Consulte condições</strong>
+              <ul><li>Atendimento pelo WhatsApp</li><li>Cadastro de usuários</li><li>Respostas rápidas</li><li>Gestão de contatos</li><li>Suporte</li></ul>
+              <a class="btn btn-outline" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Start%20do%20Zap%20Control%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es.">Começar agora</a>
+            </article>
+            <article class="plan-card featured reveal">
+              <span class="badge">Mais escolhido</span>
+              <h3>Plano Pro</h3>
+              <p>Indicado para empresas que possuem equipes de atendimento e vendas.</p>
+              <strong class="price">Consulte condições</strong>
+              <ul><li>Todos os recursos do Start</li><li>Chatbot</li><li>Filas e setores</li><li>Funil de vendas</li><li>Agendamentos</li><li>Relatórios</li><li>Campanhas</li></ul>
+              <a class="btn btn-primary" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Pro%20do%20Zap%20Control%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es.">Começar agora</a>
+            </article>
+            <article class="plan-card reveal">
+              <h3>Plano Master</h3>
+              <p>Indicado para empresas que precisam de mais desempenho, integrações e personalização.</p>
+              <strong class="price">Consulte condições</strong>
+              <ul><li>Todos os recursos do Pro</li><li>API</li><li>Webhooks</li><li>Integrações personalizadas</li><li>Maior número de usuários</li><li>Suporte prioritário</li><li>Personalização da plataforma</li></ul>
+              <a class="btn btn-outline" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Master%20do%20Zap%20Control%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es.">Começar agora</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad testimonials-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Depoimentos demonstrativos</span>
+            <h2>Empresas que melhoraram seus atendimentos com o Zap Control</h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card reveal"><div class="avatar">ML</div><div class="stars">★★★★★</div><p>“Depois que organizamos os atendimentos no Zap Control, nossa equipe passou a responder com mais rapidez e nenhum cliente ficou perdido entre os setores.”</p><strong>Mariana Lopes</strong><span>Gerente Comercial</span></article>
+            <article class="testimonial-card reveal"><div class="avatar">RM</div><div class="stars">★★★★★</div><p>“O funil de vendas e o histórico das conversas facilitaram muito o acompanhamento dos clientes. Hoje temos mais controle sobre cada oportunidade.”</p><strong>Ricardo Martins</strong><span>Diretor de Operações</span></article>
+            <article class="testimonial-card reveal"><div class="avatar">CS</div><div class="stars">★★★★★</div><p>“O chatbot reduziu as tarefas repetitivas e ajudou a direcionar cada cliente para o setor correto. Nossa operação ficou muito mais organizada.”</p><strong>Camila Souza</strong><span>Supervisora de Atendimento</span></article>
+          </div>
+          <p class="note">Depoimentos demonstrativos. Substitua por avaliações reais dos clientes antes da publicação definitiva.</p>
+        </div>
+      </section>
+
+      <section class="section-pad faq-section">
+        <div class="container faq-grid">
+          <div class="section-heading align-left reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Perguntas frequentes</h2>
+            <p>Encontre respostas para as principais dúvidas sobre o Zap Control.</p>
+          </div>
+          <div class="faq-list reveal">
+            <details open><summary>O que é o Zap Control?</summary><p>O Zap Control é uma plataforma de CRM e automação para WhatsApp que centraliza atendimentos, organiza equipes, automatiza respostas e ajuda a acompanhar clientes e oportunidades de vendas.</p></details>
+            <details><summary>Preciso trocar meu número de WhatsApp?</summary><p>Em muitos casos, é possível utilizar o número de atendimento da própria empresa. A equipe do Zap Control poderá orientar sobre a melhor forma de conexão e configuração.</p></details>
+            <details><summary>Posso cadastrar vários atendentes?</summary><p>Sim. É possível cadastrar vários usuários e organizar o atendimento por setores, filas, equipes e permissões.</p></details>
+            <details><summary>O sistema possui chatbot?</summary><p>Sim. O Zap Control permite criar fluxos e menus automáticos para direcionar os clientes aos setores corretos.</p></details>
+            <details><summary>Posso organizar os clientes por setores?</summary><p>Sim. As conversas podem ser organizadas por departamentos, filas, responsáveis, etiquetas e outras classificações.</p></details>
+            <details><summary>O Zap Control possui API?</summary><p>Sim. Os planos compatíveis podem utilizar API e webhooks para integração com sistemas externos.</p></details>
+            <details><summary>É possível realizar campanhas?</summary><p>Sim. A plataforma possui recursos para organizar campanhas e comunicações, respeitando as regras, permissões e políticas aplicáveis ao WhatsApp.</p></details>
+            <details><summary>O sistema funciona no celular?</summary><p>A plataforma possui layout responsivo e pode ser acessada em dispositivos compatíveis por meio do navegador.</p></details>
+            <details><summary>Existe suporte para configuração?</summary><p>Sim. Nossa equipe oferece suporte e orientação durante a configuração e utilização da plataforma, conforme as condições do plano contratado.</p></details>
+            <details><summary>Posso testar antes de contratar?</summary><p>Entre em contato com a equipe do Zap Control para consultar a disponibilidade e as condições do período de teste.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-pad">
+        <div class="container cta-box reveal">
+          <span class="eyebrow">Cresça com controle</span>
+          <h2>Pronto para transformar o atendimento da sua empresa?</h2>
+          <p>Automatize processos, organize sua equipe e ofereça uma experiência melhor para seus clientes com o Zap Control.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Gostaria%20de%20testar%20o%20Zap%20Control.">Testar grátis</a>
+            <a class="btn btn-light btn-large" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20o%20Zap%20Control%20e%20falar%20com%20um%20especialista.">Falar com um especialista</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad contact-section" id="contato">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <span class="eyebrow">Contato</span>
+            <h2>Vamos melhorar o atendimento da sua empresa?</h2>
+            <p>Fale com nossa equipe e descubra como o Zap Control pode ajudar sua empresa a atender com mais rapidez, organização e eficiência.</p>
+            <div class="contact-info">
+              <a href="mailto:zapboot@hotmail.com">zapboot@hotmail.com</a>
+              <a href="https://wa.me/5527989001165">+55 27 98900-1165</a>
+              <a href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Preciso%20de%20ajuda%20com%20o%20Zap%20Control.">Central de Ajuda</a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <label>Nome<input name="nome" type="text" required autocomplete="name" /></label>
+            <label>Empresa<input name="empresa" type="text" required autocomplete="organization" /></label>
+            <label>E-mail<input name="email" type="email" required autocomplete="email" /></label>
+            <label>Telefone<input name="telefone" type="tel" required autocomplete="tel" /></label>
+            <label>Quantidade de atendentes<input name="atendentes" type="number" min="1" required /></label>
+            <label>Mensagem<textarea name="mensagem" rows="4" required></textarea></label>
+            <button class="btn btn-primary" type="submit">Solicitar demonstração</button>
+            <p class="form-message" role="status"></p>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>ZapControl CRM</p>
-      <a href="https://painel.chatbootsolucoes.shop">painel.chatbootsolucoes.shop</a>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-zapcontrol-dark.png" alt="Zap Control" loading="lazy" />
+          <p>CRM e automação para WhatsApp que ajuda empresas a organizar atendimentos, automatizar processos e transformar conversas em oportunidades de venda.</p>
+          <a href="mailto:zapboot@hotmail.com">zapboot@hotmail.com</a>
+          <a href="https://wa.me/5527989001165">+55 27 98900-1165</a>
+          <div class="socials" aria-label="Redes sociais">
+            <span aria-label="Instagram">Ig</span><span aria-label="Facebook">Fb</span><span aria-label="LinkedIn">In</span><span aria-label="YouTube">Yt</span>
+          </div>
+        </div>
+        <div><h3>Produto</h3><a href="#solucoes">Soluções</a><a href="#planos">Planos</a><a href="#solucoes">Integrações</a><a href="#solucoes">API</a></div>
+        <div><h3>Suporte</h3><a href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20equipe%20do%20Zap%20Control.">Contato</a><a href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Preciso%20de%20ajuda%20com%20o%20Zap%20Control.">Central de Ajuda</a><a href="#">Status</a><a href="#">Documentação</a></div>
+        <div><h3>Empresa</h3><a href="#inicio">Sobre nós</a><a href="#resultados">Resultados</a><a href="#">Termos de Uso</a><a href="#">Política de Privacidade</a></div>
+      </div>
+      <div class="container footer-bottom">© 2026 Zap Control. Todos os direitos reservados.</div>
     </footer>
-    <script src="script.js"></script>
+
+    <a class="whatsapp-float" href="https://wa.me/5527989001165?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Zap%20Control%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Fale com nossa equipe pelo WhatsApp">
+      <span>Fale com nossa equipe</span>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.4 8.4 3.4 15.1c0 2.3.7 4.5 1.9 6.4L4 29l7.8-2c1.3.4 2.7.6 4.2.6 7 0 12.6-5.4 12.6-12.2S23 3 16 3Zm0 22.5c-1.3 0-2.5-.2-3.7-.7l-.5-.2-4.6 1.2.8-4.4-.3-.5c-1.2-1.7-1.8-3.7-1.8-5.8C5.9 9.6 10.4 5.2 16 5.2s10.1 4.4 10.1 9.9-4.5 10.4-10.1 10.4Zm5.7-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.9 5 .8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4Z" /></svg>
+    </a>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
