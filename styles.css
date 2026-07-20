@@ -55,6 +55,15 @@ a {
   backdrop-filter: blur(18px);
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid rgba(217, 228, 239, 0.72);
+  border-radius: 8px;
+  background: var(--white);
+}
+
 .brand img {
   width: 178px;
   height: auto;
@@ -466,9 +475,11 @@ details p {
 .final-cta img {
   width: min(340px, 84vw);
   margin-bottom: 28px;
-  background: var(--navy);
-  padding: 14px 18px;
+  background: var(--white);
+  padding: 16px 20px;
+  border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(8, 21, 37, 0.12);
 }
 
 .final-cta p {
