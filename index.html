@@ -122,15 +122,11 @@
             campanhas, integrações e administração sem perder velocidade.
           </p>
         </div>
-        <div class="screen-slider" aria-label="Slides do sistema ZapControl CRM">
-          <input type="radio" name="screen-slide" id="screen-slide-1" checked />
-          <input type="radio" name="screen-slide" id="screen-slide-2" />
-          <input type="radio" name="screen-slide" id="screen-slide-3" />
-          <input type="radio" name="screen-slide" id="screen-slide-4" />
-          <input type="radio" name="screen-slide" id="screen-slide-5" />
-
-          <div class="slide-track">
-          <figure class="slide-card">
+        <div class="screen-slider is-playing" aria-label="Vídeo em slides do sistema ZapControl CRM" data-slider>
+          <div class="slide-stage">
+            <button class="slider-control slider-control-prev" type="button" aria-label="Slide anterior" data-slide-prev>‹</button>
+            <div class="slide-track" data-slide-track>
+          <figure class="slide-card is-active">
             <img src="assets/slide-visao-geral.png" alt="Slide com visão geral do atendimento, relatórios e planos no ZapControl CRM" />
             <figcaption>Visão geral do sistema</figcaption>
           </figure>
@@ -150,14 +146,24 @@
             <img src="assets/slide-filas-chatbot.png" alt="Tela de filas e chatbot com setores de atendimento" />
             <figcaption>Filas e chatbot</figcaption>
           </figure>
+            </div>
+            <button class="slider-control slider-control-next" type="button" aria-label="Próximo slide" data-slide-next>›</button>
           </div>
 
           <div class="slide-dots" aria-label="Navegação dos slides">
-            <label for="screen-slide-1">Visão geral</label>
-            <label for="screen-slide-2">Dashboard</label>
-            <label for="screen-slide-3">Relatórios</label>
-            <label for="screen-slide-4">Conexões</label>
-            <label for="screen-slide-5">Filas</label>
+            <button class="is-active" type="button" data-slide-dot="0">Visão geral</button>
+            <button type="button" data-slide-dot="1">Dashboard</button>
+            <button type="button" data-slide-dot="2">Relatórios</button>
+            <button type="button" data-slide-dot="3">Conexões</button>
+            <button type="button" data-slide-dot="4">Filas</button>
+          </div>
+
+          <div class="slide-player">
+            <button class="play-toggle" type="button" data-slide-play aria-label="Pausar apresentação">
+              <span class="pause-icon" aria-hidden="true">❚❚</span>
+              <span data-slide-play-label>Pausar</span>
+            </button>
+            <span>Apresentação automática das telas</span>
           </div>
         </div>
       </section>
@@ -276,5 +282,6 @@
       <p>ZapControl CRM</p>
       <a href="https://painel.chatbootsolucoes.shop">painel.chatbootsolucoes.shop</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
