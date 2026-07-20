@@ -82,6 +82,27 @@ a {
   color: var(--white);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.header-link {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .header-cta,
 .primary-button,
 .secondary-button {
@@ -341,6 +362,16 @@ h3 {
   width: 100%;
 }
 
+.screen-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.screen-frame-large {
+  grid-column: 1 / -1;
+}
+
 .centered-heading {
   width: min(900px, 100%);
   margin: 0 auto 40px;
@@ -372,6 +403,25 @@ h3 {
 
 .workflow {
   background: #f0f7fd;
+}
+
+.plans-preview {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(360px, 1.32fr);
+  gap: clamp(30px, 5vw, 64px);
+  align-items: center;
+  padding: 86px clamp(20px, 5vw, 72px);
+  background: #f6fbff;
+}
+
+.plans-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.plans-copy .primary-button {
+  margin-top: 12px;
 }
 
 .steps {
@@ -522,6 +572,7 @@ details p {
   .intro-strip,
   .split-section,
   .product-view,
+  .plans-preview,
   .proof-band {
     grid-template-columns: 1fr;
   }
@@ -552,6 +603,10 @@ details p {
     font-size: 0.78rem;
   }
 
+  .header-link {
+    display: none;
+  }
+
   .hero {
     min-height: auto;
     padding: 104px 18px 54px;
@@ -578,11 +633,13 @@ details p {
 
   .section,
   .product-view,
+  .plans-preview,
   .final-cta {
     padding: 62px 18px;
   }
 
   .feature-grid,
+  .screen-gallery,
   .steps,
   .sector-grid {
     grid-template-columns: 1fr;
